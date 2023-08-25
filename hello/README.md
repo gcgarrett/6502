@@ -7,7 +7,7 @@ vasm6502_oldstyle -Fbin -dotdir hello.asm
 ```
 
 To run the code you'll need the 6502 machine with the architecture Ben Eater laid out with the following memory address mappings:
-- $0000-$5FFF: RAM
+- $0000-$3FFF: RAM
 - $6000      : VIA Port B - LCD screen data
 - $6001      : VIA Port A - LCD screen flags
 - $6002      : VIA Data Direction Register for Port B
