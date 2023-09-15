@@ -1,5 +1,5 @@
 # rand
-Implements a pseudo-random number generator for the [6502 machine from Ben Eater](https://eater.net/6502). Pushing the [button](https://youtu.be/oOYA-jsWTmc?si=c8B5LPQbzB7_M48G) will generate a new 16-bit integer value. The generator is a [linear-feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) implemented using shifts and XOR operations. The seed value is 1729. The integer value is display in decimal format on the display.
+Implements a pseudo-random number generator for the [6502 machine from Ben Eater](https://eater.net/6502). Pushing the [button](https://youtu.be/oOYA-jsWTmc?si=c8B5LPQbzB7_M48G) will generate a new 16-bit integer value. The generator is a [linear-feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) implemented using shifts and XOR operations. The seed value is 1729. The random value is displayed in decimal format on the display.
 
 To compile the code I used VASM with the following flags:
 ```
