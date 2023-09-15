@@ -1,9 +1,9 @@
-# bin_to_dec
-Prints the binary or decimal representation of the number 1729 to the display in the [6502 machine from Ben Eater](https://eater.net/6502). Pressing the [button](https://youtu.be/oOYA-jsWTmc?si=c8B5LPQbzB7_M48G) will toggle between the two representations.
+# rand
+Implements a pseudo-random number generator for the [6502 machine from Ben Eater](https://eater.net/6502). Pushing the [button](https://youtu.be/oOYA-jsWTmc?si=c8B5LPQbzB7_M48G) will generate a new 16-bit integer value. The generator is a [linear-feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) implemented using shifts and XOR operations. The seed value is 1729. The integer value is display in decimal format on the display.
 
 To compile the code I used VASM with the following flags:
 ```
-vasm6502_oldstyle -Fbin -dotdir bin_to_dec.asm
+vasm6502_oldstyle -Fbin -dotdir rand.asm
 ```
 
 To run the code you'll need the 6502 machine with the architecture Ben Eater laid out with the following memory address mappings:
