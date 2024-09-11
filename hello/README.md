@@ -1,10 +1,15 @@
 # hello
-Prints "Hello 6502!" to the display in the [6502 machine from Ben Eater](https://eater.net/6502).
+Prints "Hello 6502!" to the display in the [6502 machine from Ben Eater](https://eater.net/6502). The Japanese version prints "ハロー・ワールド!"
 
 To compile the code I used VASM with the following flags:
 ```
 vasm6502_oldstyle -Fbin -dotdir hello.asm
 ```
+or
+```
+vasm6502_oldstyle -Fbin -dotdir hello_japanese.asm
+```
+
 
 To run the code you'll need the 6502 machine with the architecture Ben Eater laid out with the following memory address mappings:
 - $0000-$3FFF: RAM
